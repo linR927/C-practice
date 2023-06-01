@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-
+//两种方法
 //int main() {
 //	int i = 1;
 //	int k = 1;
