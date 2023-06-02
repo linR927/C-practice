@@ -1,22 +1,28 @@
 #include <stdio.h>
 #include <string.h>
 
-int main() {
+int main() 
+{
 	int i = 0;
 	char password[20] = {0};
-	for (i = 0; i < 3; i++) {
-		printf("ÇëÊäÈëÃÜÂë£º");
+	for (i = 0; i < 3; i++)
+	{
+		printf("è¯·è¾“å…¥å¯†ç ï¼š");
 		scanf("%s", password);
-		//if (password == "123456") ==²»ÄÜÓÃÀ´ÅÐ¶ÏÁ½¸ö×Ö·û´®ÊÇ·ñÏàµÈ£¬Ó¦¸ÃÊ¹ÓÃÒ»¸ö¿âº¯Êý-strcmp
-		if (strcmp(password, "123456") == 0) {
-			printf("µÇÂ¼³É¹¦\n");
+		//if (password == "123456") ==ä¸èƒ½ç”¨æ¥åˆ¤æ–­ä¸¤ä¸ªå­—ç¬¦ä¸²æ˜¯å¦ç›¸ç­‰ï¼Œåº”è¯¥ä½¿ç”¨ä¸€ä¸ªåº“å‡½æ•°-strcmp
+		if (strcmp(password, "123456") == 0) 
+		{
+			printf("ç™»å½•æˆåŠŸ\n");
 			break;
-		} else {
-			printf("ÊäÈë´íÎó\n");
+		} 
+		else 
+		{
+			printf("è¾“å…¥é”™è¯¯\n");
 		}
 	}
-	if (i == 3) {
-		printf("µÇÂ¼Ê§°Ü\n");
+	if (i == 3)
+	{
+		printf("ç™»å½•å¤±è´¥\n");
 	}
 	return 0;
 }
